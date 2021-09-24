@@ -18,22 +18,26 @@
         </header>
         <main>
           <h1> Calculadora de Física</h1>
-          <p> Cuadrado</p>
+          <p> Trapecio</p>
           <section class="operation-container">
 
-            <label for="lado-cuadrado">Lado del cuadrado</label>
-            <input type="text" id="lado-cuadrado" placeholder="Ingrese una cantidad en centimetros">
+            <label for="basei-trapecio">Base Inferior Del Trapecio</label>
+            <input type="text" id="basei-trapecio" placeholder="Ingrese una cantidad en centimetros">
+            <label for="bases-trapecio">Base Superior Del Trapecio</label>
+            <input type="text" id="bases-trapecio" placeholder="Ingrese una cantidad en centimetros">
+            <label for="altura-trapecio">Altura Del Trapecio</label>
+            <input type="text" id="altura-trapecio" placeholder="Ingrese una cantidad en centimetros">
             <div class="operation-container__resultado">
               <span>Resultado</span>
-              <p id="resultado"></p>
+              <p id="resultado-trapecio"></p>
               
             </div>
 
           </section>
         </main>
           <section class="button-container">
-            <button class="button-container__payment" type="button" onclick="calcularAreaCuadrado()" >Calcular el área</button>
-            <button class="button-container__payment" type="button" onclick="calcularPerimetroCuadrado()">Calcular el perimetro</button>
+            <button class="button-container__payment" type="button" onclick="calcularAreaTrapecio()" >Calcular el área</button>
+            <button class="button-container__payment" type="button" onclick="calcularPerimetroTrapecio()">Calcular el perimetro</button>
             <a href="/">
               <button class="button-container__cancel">Cancelar</button>
             </a>

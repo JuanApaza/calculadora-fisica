@@ -18,22 +18,24 @@
         </header>
         <main>
           <h1> Calculadora de Física</h1>
-          <p> Cuadrado</p>
+          <p> Paralelogramo</p>
           <section class="operation-container">
 
-            <label for="lado-cuadrado">Lado del cuadrado</label>
-            <input type="text" id="lado-cuadrado" placeholder="Ingrese una cantidad en centimetros">
+            <label for="base-paralelogramo">Base Del Paralelogramo</label>
+            <input type="text" id="base-paralelogramo" placeholder="Ingrese una cantidad en centimetros">
+            <label for="altura-paralelogramo">Altura Del Paralelogramo</label>
+            <input type="text" id="altura-paralelogramo" placeholder="Ingrese una cantidad en centimetros">
             <div class="operation-container__resultado">
               <span>Resultado</span>
-              <p id="resultado"></p>
+              <p id="resultado-paralelogramo"></p>
               
             </div>
 
           </section>
         </main>
           <section class="button-container">
-            <button class="button-container__payment" type="button" onclick="calcularAreaCuadrado()" >Calcular el área</button>
-            <button class="button-container__payment" type="button" onclick="calcularPerimetroCuadrado()">Calcular el perimetro</button>
+            <button class="button-container__payment" type="button" onclick="calcularAreaParalelogramo()" >Calcular el área</button>
+            <button class="button-container__payment" type="button" onclick="calcularPerimetroParalelogramo()">Calcular el perimetro</button>
             <a href="/">
               <button class="button-container__cancel">Cancelar</button>
             </a>

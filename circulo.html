@@ -18,29 +18,25 @@
         </header>
         <main>
           <h1> Calculadora de Física</h1>
-          <p> Elija la figura geométrica que desea calcular:</p>
+          <p> Circulo</p>
+          <section class="operation-container">
+
+            <label for="radio-circulo">Radio del circulo</label>
+            <input type="text" id="radio-circulo" placeholder="Ingrese una cantidad en centimetros">
+            <div class="operation-container__resultado">
+              <span>Resultado</span>
+              <p id="resultado-circulo"></p>
+              
+            </div>
+
           </section>
         </main>
           <section class="button-container">
-            <a href="./cuadrado.html">
-              <button class="button-container__payment">Cuadrado</button>
+            <button class="button-container__payment" type="button" onclick="calcularAreaCirculo()" >Calcular el área</button>
+            <button class="button-container__payment" type="button" onclick="calcularPerimetroCirculo()">Calcular el perimetro</button>
+            <a href="/">
+              <button class="button-container__cancel">Cancelar</button>
             </a>
-            <a href="./circulo.html">
-              <button class="button-container__payment">Circulo</button>
-            </a>
-            <a href="./triangulo.html">
-              <button class="button-container__payment">Triangulo</button>
-            </a>
-            <a href="./rectangulo.html">
-              <button class="button-container__payment">Rectangulo</button>
-            </a>
-            <a href="./trapecio.html">
-              <button class="button-container__payment">Trapecio</button>
-            </a>
-            <a href="./paralelogramo.html">
-              <button class="button-container__payment">Paralelogramo</button>
-            </a>
-            
           </section>
       
       </article>

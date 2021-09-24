@@ -12,16 +12,8 @@ var calcularPerimetroCuadrado = () =>{
     const resultado = perimetroDelCuadrado(ladoDelCuadrado)
     document.querySelector("#resultado").innerHTML = resultado
 }
-const perimetroDelCirculo = (radioDelCirculo) => {
-    const PI = Math.PI ;
-    const perimetroDelCirculo =  Math.round(radioDelCirculo*2*PI*100)/100;
-    return perimetroDelCirculo
-}
-const areaDelCirculo = (radioDelCirculo) =>{
-    const PI = Math.PI ;
-    radioDelCirculo =  Math.round(Math.pow(radioDelCirculo,2) * PI*100)/100;
-    return radioDelCirculo
-}
+const perimetroDelCirculo = (radioDelCirculo) => (2 * Math.PI * radioDelCirculo).toFixed(4);
+const areaDelCirculo = (radioDelCirculo) =>(Math.PI * Math.pow(radioDelCirculo,2)).toFixed(4);
 var calcularAreaCirculo = () => {
 
     const radioDelCirculo = document.querySelector("#radio-circulo").value;
